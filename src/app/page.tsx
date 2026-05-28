@@ -115,7 +115,7 @@ export default function LandingPage() {
       </div>
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFifteen
-          testimonial="\"Fabulous cut by Pauline who gave great advice on restyle. I will definitely return. Truly impressed with the service and professionalism at Johnston Browns!\""
+          testimonial='"Fabulous cut by Pauline who gave great advice on restyle. I will definitely return. Truly impressed with the service and professionalism at Johnston Browns!"'
           rating={5}
           author="Rosie Rodgers"
           avatars={[
