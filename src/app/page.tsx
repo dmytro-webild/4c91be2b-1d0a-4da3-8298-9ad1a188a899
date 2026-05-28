@@ -186,7 +186,7 @@ export default function LandingPage() {
               { label: "Book Online", href: "#contact" }, 
               { label: "Call Us", href: "tel:07377747189" }, 
               { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
-              { label: "Instagram", href: "https://www.instagram.com/johnstonbrowns/" }
+              { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
             ] }
           ]}
           copyrightText="© 2024 Johnston Browns. All rights reserved."
