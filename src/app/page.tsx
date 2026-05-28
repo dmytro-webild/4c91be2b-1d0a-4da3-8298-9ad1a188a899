@@ -182,7 +182,12 @@ export default function LandingPage() {
           columns={[
             { title: "Services", items: [{ label: "Haircuts", href: "#services" }, { label: "Colouring", href: "#services" }, { label: "Treatments", href: "#services" }, { label: "Styling", href: "#styles" }] },
             { title: "About Us", items: [{ label: "Our Story", href: "#about" }, { label: "Our Team", href: "#team" }, { label: "Testimonials", href: "#testimonials" }, { label: "FAQs", href: "#faq" }] },
-            { title: "Contact", items: [{ label: "Book Online", href: "#contact" }, { label: "Call Us", href: "tel:07377747189" }, { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" }] }
+            { title: "Contact", items: [
+              { label: "Book Online", href: "#contact" }, 
+              { label: "Call Us", href: "tel:07377747189" }, 
+              { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+              { label: "Instagram", href: "https://www.instagram.com/johnstonbrowns/" }
+            ] }
           ]}
           copyrightText="© 2024 Johnston Browns. All rights reserved."
         />
