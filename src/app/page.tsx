@@ -185,7 +185,6 @@ export default function LandingPage() {
             { title: "Contact", items: [{ label: "Book Online", href: "#contact" }, { label: "Call Us", href: "tel:07377747189" }, { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" }] }
           ]}
           copyrightText="© 2024 Johnston Browns. All rights reserved."
-          useInvertedBackground={true}
         />
       </div>
     </ThemeProvider>
