@@ -189,7 +189,7 @@ export default function LandingPage() {
               { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
             ] }
           ]}
-          copyrightText="© 2024 Johnston Browns. All rights reserved."
+          copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
     </ThemeProvider>
