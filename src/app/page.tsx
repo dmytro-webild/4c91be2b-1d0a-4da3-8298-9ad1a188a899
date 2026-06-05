@@ -21,7 +21,7 @@ const commonNavItems = [
   { name: "Team", id: "/#team" },  { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Contact", id: "/contact-form" }
+  { name: "Book Now", id: "/contact-form" }
 ];
 
 const commonFooterColumns = [
@@ -89,6 +89,9 @@ export default function LandingPage() {
             { tag: "Vibrant Hues", title: "Expert Colouring", subtitle: "Transform your hair with stunning, long-lasting color.", description: "From balayage to highlights, full colour to root touch-ups, we use premium products for radiant, healthy-looking hair.", imageSrc: "http://img.b2bpic.net/free-photo/portrait-beautiful-young-woman-with-red-lips-unusual-hair-style-with-shadow-eyes-black-background_158538-3863.jpg", imageAlt: "Hair stylist applying hair color" },
             { tag: "Healthy Hair", title: "Rejuvenating Treatments", subtitle: "Restore shine and strength with our bespoke treatments.", description: "Indulge in deep conditioning, scalp health, and strengthening treatments designed to revitalize your hair from within.", imageSrc: "http://img.b2bpic.net/free-photo/woman-getting-treatment-hairdresser-shop_23-2149229761.jpg", imageAlt: "Hair treatment being applied to hair" }
           ]}
+          buttons={[
+            { text: "Book an Appointment", href: "/contact-form" }
+          ]}
           textboxLayout="default"
           useInvertedBackground={false}
         />
@@ -128,7 +131,7 @@ export default function LandingPage() {
       </div>
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFifteen
-          testimonial='"Fabulous cut by Pauline who gave great advice on restyle. I will definitely return. Truly impressed with the service and professionalism at Johnston Browns!"'
+          testimonial="'Fabulous cut by Pauline who gave great advice on restyle. I will definitely return. Truly impressed with the service and professionalism at Johnston Browns!'"
           rating={5}
           author="Rosie Rodgers"
           avatars={[
@@ -182,6 +185,7 @@ export default function LandingPage() {
           title="Ready for a New Look?"
           description="Don't wait to revitalize your style. Contact Johnston Browns Hair Studio today to schedule your appointment with our talented team."
           buttons={[
+            { text: "Book an Appointment", href: "/contact-form" },
             { text: "Call Us Now", href: "tel:07377747189" },
             { text: "Email Us", href: "mailto:info@johnstonbrowns.com" },
             { text: "WhatsApp Us", href: "https://wa.me/07377747189" }
