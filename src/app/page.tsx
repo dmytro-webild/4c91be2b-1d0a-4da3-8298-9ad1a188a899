@@ -170,7 +170,8 @@ export default function LandingPage() {
           description="Don't wait to revitalize your style. Contact Johnston Browns Hair Studio today to schedule your appointment with our talented team."
           buttons={[
             { text: "Call Us Now", href: "tel:07377747189" },
-            { text: "Email Us", href: "mailto:info@johnstonbrowns.com" }
+            { text: "Email Us", href: "mailto:info@johnstonbrowns.com" },
+            { text: "WhatsApp Us", href: "https://wa.me/07377747189" }
           ]}
           background={{ variant: "plain" }}
           useInvertedBackground={false}
@@ -185,6 +186,7 @@ export default function LandingPage() {
             { title: "Contact", items: [
               { label: "Book Online", href: "#contact" }, 
               { label: "Call Us", href: "tel:07377747189" }, 
+              { label: "WhatsApp", href: "https://wa.me/07377747189" },
               { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
               { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
             ] }
