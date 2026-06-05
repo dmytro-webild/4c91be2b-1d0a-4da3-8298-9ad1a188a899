@@ -63,7 +63,7 @@ export default function ContactFormPage() {
           textarea={{ name: "message", placeholder: "Tell us about your desired service or any special requests.", rows: 5, required: false }}
           buttonText="Submit Booking Request"
           mediaPosition="right"
-          imageSrc="http://img.b2bpic.net/free-photo/hairdresser-does-hair-style-woman_93675-134626.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/hairdresser-does-hair-style-woman_93675-134626.jpg?_wi=1"
           imageAlt="Hairdresser styling client's hair"
           useInvertedBackground={false}
           onSubmit={(data) => {
