@@ -53,7 +53,6 @@ export default function ContactFormPage() {
         <ContactSplitForm
           title="Book Your Appointment"
           description="Fill out the form below to schedule your visit to Johnston Browns Hair Studio. We look forward to seeing you!"
-          tag="Schedule Now"
           inputs={[
             { name: "name", type: "text", placeholder: "Your Name", required: true },
             { name: "email", type: "email", placeholder: "Your Email", required: true },
