@@ -23,7 +23,7 @@ const commonFooterColumns = [
   { title: "Contact", items: [
     { label: "Book Online", href: "/booking" },
     { label: "Call Us", href: "tel:07377747189" },
-    { label: "WhatsApp", href: "https://wa.me/07377747189" },
+    { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
