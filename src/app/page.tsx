@@ -13,6 +13,29 @@ import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
+const commonNavItems = [
+  { name: "Home", id: "/" },
+  { name: "About", id: "/#about" },
+  { name: "Services", id: "/#services" },
+  { name: "Styles", id: "/#styles" },
+  { name: "Team", id: "/#team" },  { name: "Testimonials", id: "/#testimonials" },
+  { name: "Pricing", id: "/#pricing" },
+  { name: "FAQ", id: "/#faq" },
+  { name: "Contact", id: "/contact-form" }
+];
+
+const commonFooterColumns = [
+  { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
+  { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
+  { title: "Contact", items: [
+    { label: "Book Online", href: "/contact-form" }, 
+    { label: "Call Us", href: "tel:07377747189" }, 
+    { label: "WhatsApp", href: "https://wa.me/07377747189" },
+    { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
+  ] }
+];
+
 export default function LandingPage() {
   return (
     <ThemeProvider
@@ -30,17 +53,7 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Johnston Browns"
-          navItems={[
-            { name: "Home", id: "#home" },
-            { name: "About", id: "#about" },
-            { name: "Services", id: "#services" },
-            { name: "Styles", id: "#styles" },
-            { name: "Team", id: "#team" },
-            { name: "Testimonials", id: "#testimonials" },
-            { name: "Pricing", id: "#pricing" },
-            { name: "FAQ", id: "#faq" },
-            { name: "Contact", id: "#contact" }
-          ]}
+          navItems={commonNavItems}
         />
       </div>
       <div id="home" data-section="home">
@@ -48,8 +61,8 @@ export default function LandingPage() {
           logoText="Johnston Browns Hair Studio"
           description="Experience unparalleled style and care at Johnston Browns, Glasgow's premier destination for exquisite hairdressing. Transform your look with our expert stylists."
           buttons={[
-            { text: "Book an Appointment", href: "#contact" },
-            { text: "View Services", href: "#services" }
+            { text: "Book an Appointment", href: "/contact-form" },
+            { text: "View Services", href: "/#services" }
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon_176420-4450.jpg"
           imageAlt="Luxurious hair salon interior with stylist"
@@ -63,7 +76,7 @@ export default function LandingPage() {
           ]}
           useInvertedBackground={true}
           buttons={[
-            { text: "Meet Our Team", href: "#team" }
+            { text: "Meet Our Team", href: "/#team" }
           ]}
         />
       </div>
@@ -135,9 +148,9 @@ export default function LandingPage() {
           title="Our Service Pricing"
           description="Transparent pricing for our most popular services. Contact us for a personalized consultation and quote."
           plans={[
-            { id: "cut-style", tag: "Haircut & Style", price: "From £40", period: "starting from", description: "Experience a refreshing wash, precision cut, and expert blow-dry tailored to your desired style.", button: { text: "Book Now", href: "#contact" }, featuresTitle: "Services include:", features: ["Consultation", "Wash & Condition", "Precision Cut", "Blow-Dry & Style"] },
-            { id: "color-highlights", tag: "Colour & Highlights", price: "From £85", period: "starting from", description: "Achieve your perfect shade with our range of colour services, including highlights, balayage, and full colour. Price varies by hair length and complexity.", button: { text: "Book Now", href: "#contact" }, featuresTitle: "Services include:", features: ["Consultation", "Colour Application", "Wash & Finish", "Toner (if needed)"] },
-            { id: "treatments", tag: "Hair Treatments", price: "From £35", period: "starting from", description: "Revitalize your hair with deep conditioning, strengthening treatments, or nourishing scalp therapies for ultimate health and shine.", button: { text: "Book Now", href: "#contact" }, featuresTitle: "Treatments offer:", features: ["Deep Repair", "Added Shine", "Strength Boost", "Scalp Rejuvenation"] }
+            { id: "cut-style", tag: "Haircut & Style", price: "From £40", period: "starting from", description: "Experience a refreshing wash, precision cut, and expert blow-dry tailored to your desired style.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Services include:", features: ["Consultation", "Wash & Condition", "Precision Cut", "Blow-Dry & Style"] },
+            { id: "color-highlights", tag: "Colour & Highlights", price: "From £85", period: "starting from", description: "Achieve your perfect shade with our range of colour services, including highlights, balayage, and full colour. Price varies by hair length and complexity.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Services include:", features: ["Consultation", "Colour Application", "Wash & Finish", "Toner (if needed)"] },
+            { id: "treatments", tag: "Hair Treatments", price: "From £35", period: "starting from", description: "Revitalize your hair with deep conditioning, strengthening treatments, or nourishing scalp therapies for ultimate health and shine.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Treatments offer:", features: ["Deep Repair", "Added Shine", "Strength Boost", "Scalp Rejuvenation"] }
           ]}
           animationType="slide-up"
           textboxLayout="default"
@@ -180,17 +193,7 @@ export default function LandingPage() {
       <div id="footer" data-section="footer">
         <FooterBaseCard
           logoText="Johnston Browns Hair Studio"
-          columns={[
-            { title: "Services", items: [{ label: "Haircuts", href: "#services" }, { label: "Colouring", href: "#services" }, { label: "Treatments", href: "#services" }, { label: "Styling", href: "#styles" }] },
-            { title: "About Us", items: [{ label: "Our Story", href: "#about" }, { label: "Our Team", href: "#team" }, { label: "Testimonials", href: "#testimonials" }, { label: "FAQs", href: "#faq" }] },
-            { title: "Contact", items: [
-              { label: "Book Online", href: "#contact" }, 
-              { label: "Call Us", href: "tel:07377747189" }, 
-              { label: "WhatsApp", href: "https://wa.me/07377747189" },
-              { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
-              { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
-            ] }
-          ]}
+          columns={commonFooterColumns}
           copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
