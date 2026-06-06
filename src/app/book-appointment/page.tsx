@@ -5,7 +5,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import React from 'react';
 
-const commonNavItems = [
+const newCommonNavItems = [
   { name: "Home", id: "/" },
   { name: "About", id: "/#about" },
   { name: "Services", id: "/#services" },
@@ -14,14 +14,16 @@ const commonNavItems = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Appointment", id: "/book-appointment" }
+  { name: "Book Appointment", id: "/book-appointment" },
+  { name: "Contact Us", id: "/contact-form" }
 ];
 
-const commonFooterColumns = [
+const newCommonFooterColumns = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
     { label: "Book Online", href: "/book-appointment" },
+    { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
@@ -46,7 +48,7 @@ export default function BookingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Johnston Browns"
-          navItems={commonNavItems}
+          navItems={newCommonNavItems}
         />
       </div>
 
@@ -67,7 +69,7 @@ export default function BookingPage() {
       <div id="footer" data-section="footer">
         <FooterBaseCard
           logoText="Johnston Browns Hair Studio"
-          columns={commonFooterColumns}
+          columns={newCommonFooterColumns}
           copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
