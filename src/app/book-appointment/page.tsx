@@ -2,10 +2,10 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import React from 'react';
 
-const newCommonNavItems = [
+const finalNavItems = [
   { name: "Home", id: "/" },
   { name: "About", id: "/#about" },
   { name: "Services", id: "/#services" },
@@ -14,16 +14,14 @@ const newCommonNavItems = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Appointment", id: "/book-appointment" },
-  { name: "Contact Us", id: "/contact-form" }
+  { name: "Book Appointment", id: "/book-appointment" }
 ];
 
-const newCommonFooterColumns = [
+const finalFooterColumns = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
     { label: "Book Online", href: "/book-appointment" },
-    { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
@@ -48,28 +46,39 @@ export default function BookingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Johnston Browns"
-          navItems={newCommonNavItems}
+          navItems={finalNavItems}
         />
       </div>
-
-      <div id="booking-section" data-section="booking-section" className="py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">Book Your Appointment</h1>
-        <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mb-12">
-          Select a service and time that works best for you. Our online booking system is simple and secure.
-        </p>
-        <div className="w-full max-w-4xl bg-card rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
-          {/* Calendly embed code will go here */}
-          {/* Example Calendly Inline Embed */}
-          <div className="calendly-inline-widget" data-url="https://calendly.com/your-calendly-username/30min" style={{ minWidth: '320px', height: '700px' }}></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          {/* Replace 'https://calendly.com/your-calendly-username/30min' with your actual Calendly event link */}
-        </div>
+      <div id="book-appointment-page" data-section="book-appointment-page">
+        <ContactSplitForm
+          title="Book Your Appointment"
+          description="Fill out the form below to schedule your visit to Johnston Browns Hair Studio. We look forward to seeing you! Your booking request will be securely forwarded to our team via email, and we will contact you shortly to confirm."
+          inputs={[
+            { name: "name", type: "text", placeholder: "Your Name", required: true },
+            { name: "email", type: "email", placeholder: "Your Email", required: true },
+            { name: "phone", type: "tel", placeholder: "Phone Number", required: false },
+            { name: "preferredDate", type: "text", placeholder: "Preferred Date (DD/MM/YYYY)", required: false },
+            { name: "preferredTime", type: "text", placeholder: "Preferred Time (e.g., 2:00 PM)", required: false }
+          ]}
+          textarea={{ name: "message", placeholder: "Tell us about your desired service or any special requests.", rows: 5, required: false }}
+          buttonText="Submit Booking Request"
+          mediaPosition="right"
+          imageSrc="http://img.b2bpic.net/free-photo/hairdresser-does-hair-style-woman_93675-134626.jpg?_wi=1"
+          imageAlt="Hairdresser styling client's hair"
+          useInvertedBackground={false}
+          onSubmit={(data) => {
+            console.log("Booking request submitted:", data);
+            alert("Thank you for your booking request! We will contact you shortly to confirm.");
+            // In a real application, 'data' would be sent to a backend API for email forwarding.
+            // Example: fetch('/api/send-booking-email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+          }}
+        />
       </div>
 
       <div id="footer" data-section="footer">
         <FooterBaseCard
           logoText="Johnston Browns Hair Studio"
-          columns={newCommonFooterColumns}
+          columns={finalFooterColumns}
           copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
