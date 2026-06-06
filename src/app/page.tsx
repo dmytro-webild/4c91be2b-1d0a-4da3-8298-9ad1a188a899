@@ -13,23 +13,24 @@ import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
-const commonNavItems = [
+const finalNavItemsForAllPages = [
   { name: "Home", id: "/" },
   { name: "About", id: "/#about" },
   { name: "Services", id: "/#services" },
   { name: "Styles", id: "/#styles" },
-  { name: "Team", id: "/#team" },  { name: "Testimonials", id: "/#testimonials" },
+  { name: "Team", id: "/#team" },
+  { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
   { name: "Book Now", id: "/contact-form" }
 ];
 
-const commonFooterColumns = [
+const finalFooterColumnsForAllPages = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
-    { label: "Book Online", href: "/contact-form" }, 
-    { label: "Call Us", href: "tel:07377747189" }, 
+    { label: "Book Online", href: "/contact-form" },
+    { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
@@ -53,7 +54,7 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Johnston Browns"
-          navItems={commonNavItems}
+          navItems={finalNavItemsForAllPages}
         />
       </div>
       <div id="home" data-section="home">
@@ -197,7 +198,7 @@ export default function LandingPage() {
       <div id="footer" data-section="footer">
         <FooterBaseCard
           logoText="Johnston Browns Hair Studio"
-          columns={commonFooterColumns}
+          columns={finalFooterColumnsForAllPages}
           copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
