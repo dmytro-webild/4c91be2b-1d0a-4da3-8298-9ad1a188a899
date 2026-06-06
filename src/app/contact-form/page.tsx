@@ -24,7 +24,6 @@ const commonFooterColumns = [
     { label: "Book Online", href: "/contact-form" }, 
     { label: "Call Us", href: "tel:07377747189" }, 
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
-    { label: "Email Us", href: "mailto:negin.eydimohammadi@gmail.com" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
