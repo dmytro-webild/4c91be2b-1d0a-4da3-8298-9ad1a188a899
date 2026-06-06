@@ -31,7 +31,6 @@ const commonFooterColumns = [
     { label: "Book Online", href: "/contact-form" }, 
     { label: "Call Us", href: "tel:07377747189" }, 
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
-    { label: "Email Us", href: "mailto:negin.eydimohammadi@gmail.com" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
@@ -188,7 +187,7 @@ export default function LandingPage() {
           buttons={[
             { text: "Book an Appointment", href: "/contact-form" },
             { text: "Call Us Now", href: "tel:07377747189" },
-            { text: "Email Us", href: "mailto:negin.eydimohammadi@gmail.com" },
+            { text: "Email Us", href: "mailto:info@johnstonbrowns.com" },
             { text: "WhatsApp Us", href: "https://wa.me/message/UEFDBW2YGR2VP1" }
           ]}
           background={{ variant: "plain" }}
