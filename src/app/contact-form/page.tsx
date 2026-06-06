@@ -14,7 +14,7 @@ const commonNavItems = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Contact", id: "/contact-form" }
+  { name: "Book Now", id: "/contact-form" }
 ];
 
 const commonFooterColumns = [
