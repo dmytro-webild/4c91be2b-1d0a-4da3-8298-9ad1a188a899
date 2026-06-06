@@ -5,7 +5,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
-const newCommonNavItems = [
+const finalNavItemsForAllPages = [
   { name: "Home", id: "/" },
   { name: "About", id: "/#about" },
   { name: "Services", id: "/#services" },
@@ -14,16 +14,14 @@ const newCommonNavItems = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Appointment", id: "/book-appointment" },
-  { name: "Contact Us", id: "/contact-form" }
+  { name: "Book Now", id: "/contact-form" }
 ];
 
-const newCommonFooterColumns = [
+const finalFooterColumnsForAllPages = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
-    { label: "Book Online", href: "/book-appointment" },
-    { label: "Contact Form", href: "/contact-form" },
+    { label: "Book Online", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
@@ -48,13 +46,13 @@ export default function ContactFormPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Johnston Browns"
-          navItems={newCommonNavItems}
+          navItems={finalNavItemsForAllPages}
         />
       </div>
       <div id="contact-form-page" data-section="contact-form-page">
         <ContactSplitForm
           title="Book Your Appointment"
-          description="Fill out the form below to schedule your visit to Johnston Browns Hair Studio. We look forward to seeing you!"
+          description="Fill out the form below to schedule your visit to Johnston Browns Hair Studio. We look forward to seeing you! Your booking request will be securely forwarded to our team via email, and we will contact you shortly to confirm."
           inputs={[
             { name: "name", type: "text", placeholder: "Your Name", required: true },
             { name: "email", type: "email", placeholder: "Your Email", required: true },
@@ -75,17 +73,15 @@ export default function ContactFormPage() {
         />
       </div>
 
-      {/* NEW SECTION: Dedicated Booking Service Embed */}
       <div id="booking-service-embed" data-section="booking-service-embed" className="py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-foreground">Schedule Your Visit</h2>
         <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mb-12">
           Use our dedicated online booking system below to find an available slot and confirm your appointment instantly.
         </p>
         <div className="w-full max-w-4xl bg-card rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
-          {/* Placeholder for your actual booking system embed code */}
           <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%', height: 0 }}>
             <iframe
-              src="https://example.com/your-booking-service-embed-url" // Replace with your actual booking system URL (e.g., Calendly, Setmore, etc.)
+              src="https://example.com/your-booking-service-embed-url"
               title="Dedicated Online Booking System"
               className="absolute top-0 left-0 w-full h-full border-0 rounded-md"
               allowFullScreen
@@ -102,7 +98,7 @@ export default function ContactFormPage() {
       <div id="footer" data-section="footer">
         <FooterBaseCard
           logoText="Johnston Browns Hair Studio"
-          columns={newCommonFooterColumns}
+          columns={finalFooterColumnsForAllPages}
           copyrightText="© 2024 Johnston Browns, owned by Negin eidimohammadi. All rights reserved."
         />
       </div>
