@@ -1,21 +1,21 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarFloating from '@/components/ui/NavbarFloating';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
 const finalNavItems = [
-  { name: "Home", id: "/" },
-  { name: "About", id: "/#about" },
-  { name: "Services", id: "/#services" },
-  { name: "Styles", id: "/#styles" },
-  { name: "Team", id: "/#team" },
-  { name: "Testimonials", id: "/#testimonials" },
-  { name: "Pricing", id: "/#pricing" },
-  { name: "FAQ", id: "/#faq" },
-  { name: "Book Appointment", id: "/book-appointment" },
-  { name: "Contact Us", id: "/contact-form" }
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about" },
+  { name: "Services", href: "/#services" },
+  { name: "Styles", href: "/#styles" },
+  { name: "Team", href: "/#team" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Pricing", href: "/#pricing" },
+  { name: "FAQ", href: "/#faq" },
+  { name: "Book Appointment", href: "/book-appointment" },
+  { name: "Contact Us", href: "/contact-form" }
 ];
 
 const finalFooterColumns = [
@@ -47,9 +47,10 @@ export default function BookingPage() {
       headingFontWeight="medium"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple
-          brandName="Johnston Browns"
+        <NavbarFloating
+          logo="Johnston Browns"
           navItems={finalNavItems}
+          ctaButton={{ text: "Book Now", href: "/book-appointment" }}
         />
       </div>
       <div id="book-appointment-page" data-section="book-appointment-page">
