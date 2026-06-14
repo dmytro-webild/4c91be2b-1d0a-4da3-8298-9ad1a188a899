@@ -24,7 +24,8 @@ const finalFooterColumns = [
     { label: "Book Online", href: "/book-appointment" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
-    { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 2", href: "https://maps.app.goo.gl/HgPG6jJqap3yYa1RA?g_st=ic" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
 ];
@@ -69,8 +70,6 @@ export default function BookingPage() {
           onSubmit={(data) => {
             console.log("Booking request submitted:", data);
             alert("Thank you for your booking request! We will contact you shortly to confirm.");
-            // In a real application, 'data' would be sent to a backend API for email forwarding.
-            // Example: fetch('/api/send-booking-email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
           }}
         />
       </div>
