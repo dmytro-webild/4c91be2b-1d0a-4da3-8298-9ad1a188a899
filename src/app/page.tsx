@@ -22,14 +22,16 @@ const finalNavItemsForAllPages = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Now", id: "/contact-form" }
+  { name: "Book Appointment", id: "/book-appointment" },
+  { name: "Contact Us", id: "/contact-form" }
 ];
 
 const finalFooterColumnsForAllPages = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
-    { label: "Book Online", href: "/contact-form" },
+    { label: "Book Online", href: "/book-appointment" },
+    { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
@@ -63,7 +65,7 @@ export default function LandingPage() {
           logoText="Johnston Browns Hair Studio"
           description="Experience unparalleled style and care at Johnston Browns, Glasgow's premier destination for exquisite hairdressing. Transform your look with our expert stylists."
           buttons={[
-            { text: "Book an Appointment", href: "/contact-form" },
+            { text: "Book an Appointment", href: "/book-appointment" },
             { text: "View Services", href: "/#services" }
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon_176420-4450.jpg"
@@ -92,7 +94,7 @@ export default function LandingPage() {
             { tag: "Healthy Hair", title: "Rejuvenating Treatments", subtitle: "Restore shine and strength with our bespoke treatments.", description: "Indulge in deep conditioning, scalp health, and strengthening treatments designed to revitalize your hair from within.", imageSrc: "http://img.b2bpic.net/free-photo/woman-getting-treatment-hairdresser-shop_23-2149229761.jpg", imageAlt: "Hair treatment being applied to hair" }
           ]}
           buttons={[
-            { text: "Book an Appointment", href: "/contact-form" }
+            { text: "Book an Appointment", href: "/book-appointment" }
           ]}
           textboxLayout="default"
           useInvertedBackground={false}
@@ -104,7 +106,7 @@ export default function LandingPage() {
           description="Explore a gallery of our most loved transformations and find inspiration for your next visit. Our stylists are masters of diverse looks."
           products={[
             { id: "1", brand: "Classic Bob", name: "Sleek & Chic", price: "From £60", rating: 5, reviewCount: "120 reviews", imageSrc: "http://img.b2bpic.net/free-photo/portrait-beautiful-cute-brunette-woman-model-casual-summer-clothes-with-no-makeup-isolated-gray-wall_158538-14683.jpg", imageAlt: "Sleek bob haircut" },
-            { id: "2", brand: "Long Layers", name: "Natural Flow", price: "From £75", rating: 5, reviewCount: "95 reviews", imageSrc: "http://img.b2bpic.net/free-photo/beautiful-woman-posing-leaves_23-2148396333.jpg", imageAlt: "Long layered hair with natural flow" },
+            { id: "2", brand: "Long Layers", name: "Natural Flow", price: "From £75", rating: 5, reviewCount: "95 reviews", imageSrc: "http://img.b2bpic.net/beautiful-woman-posing-leaves_23-2148396333.jpg", imageAlt: "Long layered hair with natural flow" },
             { id: "3", brand: "Curly Texture", name: "Voluminous Curls", price: "From £80", rating: 5, reviewCount: "88 reviews", imageSrc: "http://img.b2bpic.net/free-photo/mixed-race-black-woman-portrait-with-big-afro-hair-curly-hair-beige-background-smiling-laughing-closeup_633478-2968.jpg", imageAlt: "Woman with voluminous curly hair" },
             { id: "4", brand: "Gent's Cut", name: "Modern Fade", price: "From £45", rating: 5, reviewCount: "110 reviews", imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506366.jpg", imageAlt: "Man with modern fade haircut" },
             { id: "5", brand: "Bold Colour", name: "Vibrant Transformation", price: "POA", rating: 5, reviewCount: "72 reviews", imageSrc: "http://img.b2bpic.net/free-photo/beautiful-charming-woman-one-wonderful_1304-872.jpg", imageAlt: "Woman with vibrant red hair color" },
@@ -153,9 +155,9 @@ export default function LandingPage() {
           title="Our Service Pricing"
           description="Transparent pricing for our most popular services. Contact us for a personalized consultation and quote."
           plans={[
-            { id: "cut-style", tag: "Haircut & Style", price: "From £40", period: "starting from", description: "Experience a refreshing wash, precision cut, and expert blow-dry tailored to your desired style.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Services include:", features: ["Consultation", "Wash & Condition", "Precision Cut", "Blow-Dry & Style"] },
-            { id: "color-highlights", tag: "Colour & Highlights", price: "From £85", period: "starting from", description: "Achieve your perfect shade with our range of colour services, including highlights, balayage, and full colour. Price varies by hair length and complexity.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Services include:", features: ["Consultation", "Colour Application", "Wash & Finish", "Toner (if needed)"] },
-            { id: "treatments", tag: "Hair Treatments", price: "From £35", period: "starting from", description: "Revitalize your hair with deep conditioning, strengthening treatments, or nourishing scalp therapies for ultimate health and shine.", button: { text: "Book Now", href: "/contact-form" }, featuresTitle: "Treatments offer:", features: ["Deep Repair", "Added Shine", "Strength Boost", "Scalp Rejuvenation"] }
+            { id: "cut-style", tag: "Haircut & Style", price: "From £40", period: "starting from", description: "Experience a refreshing wash, precision cut, and expert blow-dry tailored to your desired style.", button: { text: "Book Now", href: "/book-appointment" }, featuresTitle: "Services include:", features: ["Consultation", "Wash & Condition", "Precision Cut", "Blow-Dry & Style"] },
+            { id: "color-highlights", tag: "Colour & Highlights", price: "From £85", period: "starting from", description: "Achieve your perfect shade with our range of colour services, including highlights, balayage, and full colour. Price varies by hair length and complexity.", button: { text: "Book Now", href: "/book-appointment" }, featuresTitle: "Services include:", features: ["Consultation", "Colour Application", "Wash & Finish", "Toner (if needed)"] },
+            { id: "treatments", tag: "Hair Treatments", price: "From £35", period: "starting from", description: "Revitalize your hair with deep conditioning, strengthening treatments, or nourishing scalp therapies for ultimate health and shine.", button: { text: "Book Now", href: "/book-appointment" }, featuresTitle: "Treatments offer:", features: ["Deep Repair", "Added Shine", "Strength Boost", "Scalp Rejuvenation"] }
           ]}
           animationType="slide-up"
           textboxLayout="default"
@@ -187,7 +189,7 @@ export default function LandingPage() {
           title="Ready for a New Look?"
           description="Don't wait to revitalize your style. Contact Johnston Browns Hair Studio today to schedule your appointment with our talented team."
           buttons={[
-            { text: "Book an Appointment", href: "/contact-form" },
+            { text: "Book an Appointment", href: "/book-appointment" },
             { text: "Call Us Now", href: "tel:07377747189" },
             { text: "Email Us", href: "mailto:info@johnstonbrowns.com" },
             { text: "WhatsApp Us", href: "https://wa.me/message/UEFDBW2YGR2VP1" }
