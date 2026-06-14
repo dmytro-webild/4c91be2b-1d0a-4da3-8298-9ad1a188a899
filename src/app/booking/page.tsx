@@ -1,25 +1,25 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarFloating from '@/components/ui/NavbarFloating';
+import NavbarDropdown from '@/components/ui/NavbarDropdown';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
 const newCommonNavItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Services", href: "/#services" },
-  { name: "Styles", href: "/#styles" },
-  { name: "Team", href: "/#team" },
-  { name: "Testimonials", href: "/#testimonials" },
-  { name: "Pricing", href: "/#pricing" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "About", href: "/" },
+  { name: "Services", href: "/" },
+  { name: "Styles", href: "/" },
+  { name: "Team", href: "/" },
+  { name: "Testimonials", href: "/" },
+  { name: "Pricing", href: "/" },
+  { name: "FAQ", href: "/" },
   { name: "Book Appointment", href: "/book-appointment" },
   { name: "Contact Us", href: "/contact-form" }
 ];
 
 const newCommonFooterColumns = [
-  { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
-  { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
+  { title: "Services", items: [{ label: "Haircuts", href: "/" }, { label: "Colouring", href: "/" }, { label: "Treatments", href: "/" }, { label: "Styling", href: "/" }] },
+  { title: "About Us", items: [{ label: "Our Story", href: "/" }, { label: "Our Team", href: "/" }, { label: "Testimonials", href: "/" }, { label: "FAQs", href: "/" }] },
   { title: "Contact", items: [
     { label: "Book Online", href: "/book-appointment" },
     { label: "Contact Form", href: "/contact-form" },
@@ -46,7 +46,7 @@ export default function BookingPage() {
       headingFontWeight="medium"
     >
       <div id="nav" data-section="nav">
-        <NavbarFloating
+        <NavbarDropdown
           logo="Johnston Browns"
           navItems={newCommonNavItems}
           ctaButton={{ text: "Book Now", href: "/book-appointment" }}
