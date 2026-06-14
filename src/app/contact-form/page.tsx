@@ -24,7 +24,8 @@ const finalFooterColumnsForAllPages = [
     { label: "Book Online", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
-    { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 2", href: "https://maps.app.goo.gl/HgPG6jJqap3yYa1RA?g_st=ic" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
 ];
