@@ -25,7 +25,8 @@ const newCommonFooterColumns = [
     { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
-    { label: "Our Location", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
+    { label: "Branch 2", href: "https://maps.app.goo.gl/HgPG6jJqap3yYa1RA?g_st=ic" },
     { label: "Instagram", href: "https://www.instagram.com/mohamadinegin56/" }
   ] }
 ];
@@ -57,11 +58,9 @@ export default function BookingPage() {
           Use our integrated booking system below to schedule your next visit with ease. Choose your preferred service, stylist, and time slot.
         </p>
         <div className="w-full max-w-4xl bg-card p-6 rounded-lg shadow-xl border border-border">
-          {/* Placeholder for your booking system embed code */}
           <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%', height: 0 }}>
-            {/* Replace this iframe with your actual booking system embed code */}
             <iframe
-              src="https://example.com/your-booking-system-embed-url" // **CRITICAL: Replace with actual booking system URL**
+              src="https://example.com/your-booking-system-embed-url"
               title="Online Booking System"
               className="absolute top-0 left-0 w-full h-full border-0 rounded-md"
               allowFullScreen
