@@ -14,14 +14,16 @@ const finalNavItemsForAllPages = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Now", id: "/contact-form" }
+  { name: "Book Appointment", id: "/book-appointment" },
+  { name: "Contact Us", id: "/contact-form" }
 ];
 
 const finalFooterColumnsForAllPages = [
   { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
-    { label: "Book Online", href: "/contact-form" },
+    { label: "Book Online", href: "/book-appointment" },
+    { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
