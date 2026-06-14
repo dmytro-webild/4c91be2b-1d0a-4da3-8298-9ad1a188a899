@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarFloating from '@/components/ui/NavbarFloating';
+import NavbarDropdown from '@/components/ui/NavbarDropdown';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
@@ -15,20 +15,20 @@ import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 
 const finalNavItemsForAllPages = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Services", href: "/#services" },
-  { name: "Styles", href: "/#styles" },
-  { name: "Team", href: "/#team" },
-  { name: "Testimonials", href: "/#testimonials" },
-  { name: "Pricing", href: "/#pricing" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "About", href: "/" },
+  { name: "Services", href: "/" },
+  { name: "Styles", href: "/" },
+  { name: "Team", href: "/" },
+  { name: "Testimonials", href: "/" },
+  { name: "Pricing", href: "/" },
+  { name: "FAQ", href: "/" },
   { name: "Book Appointment", href: "/book-appointment" },
   { name: "Contact Us", href: "/contact-form" }
 ];
 
 const finalFooterColumnsForAllPages = [
-  { title: "Services", items: [{ label: "Haircuts", href: "/#services" }, { label: "Colouring", href: "/#services" }, { label: "Treatments", href: "/#services" }, { label: "Styling", href: "/#styles" }] },
-  { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
+  { title: "Services", items: [{ label: "Haircuts", href: "/" }, { label: "Colouring", href: "/" }, { label: "Treatments", href: "/" }, { label: "Styling", href: "/" }] },
+  { title: "About Us", items: [{ label: "Our Story", href: "/" }, { label: "Our Team", href: "/" }, { label: "Testimonials", href: "/" }, { label: "FAQs", href: "/" }] },
   { title: "Contact", items: [
     { label: "Book Online", href: "/book-appointment" },
     { label: "Contact Form", href: "/contact-form" },
@@ -55,7 +55,7 @@ export default function LandingPage() {
       headingFontWeight="medium"
     >
       <div id="nav" data-section="nav">
-        <NavbarFloating
+        <NavbarDropdown
           logo="Johnston Browns"
           navItems={finalNavItemsForAllPages}
           ctaButton={{ text: "Book Now", href: "/book-appointment" }}
@@ -67,7 +67,7 @@ export default function LandingPage() {
           description="Experience unparalleled style and care at Johnston Browns, Glasgow's premier destination for exquisite hairdressing. Transform your look with our expert stylists."
           buttons={[
             { text: "Book an Appointment", href: "/book-appointment" },
-            { text: "View Services", href: "/#services" }
+            { text: "View Services", href: "/" }
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon_176420-4450.jpg"
           imageAlt="Luxurious hair salon interior with stylist"
@@ -81,7 +81,7 @@ export default function LandingPage() {
           ]}
           useInvertedBackground={true}
           buttons={[
-            { text: "Meet Our Team", href: "/#team" }
+            { text: "Meet Our Team", href: "/" }
           ]}
         />
       </div>
