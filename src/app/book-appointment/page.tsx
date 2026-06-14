@@ -14,7 +14,8 @@ const finalNavItems = [
   { name: "Testimonials", id: "/#testimonials" },
   { name: "Pricing", id: "/#pricing" },
   { name: "FAQ", id: "/#faq" },
-  { name: "Book Appointment", id: "/book-appointment" }
+  { name: "Book Appointment", id: "/book-appointment" },
+  { name: "Contact Us", id: "/contact-form" }
 ];
 
 const finalFooterColumns = [
@@ -22,6 +23,7 @@ const finalFooterColumns = [
   { title: "About Us", items: [{ label: "Our Story", href: "/#about" }, { label: "Our Team", href: "/#team" }, { label: "Testimonials", href: "/#testimonials" }, { label: "FAQs", href: "/#faq" }] },
   { title: "Contact", items: [
     { label: "Book Online", href: "/book-appointment" },
+    { label: "Contact Form", href: "/contact-form" },
     { label: "Call Us", href: "tel:07377747189" },
     { label: "WhatsApp", href: "https://wa.me/message/UEFDBW2YGR2VP1" },
     { label: "Branch 1", href: "https://maps.app.goo.gl/YourGoogleMapsLink" },
